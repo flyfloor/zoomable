@@ -5,8 +5,16 @@
 	"description":"my first chrome extension",
 	"version": "1.0",
 
+	"content_scripts": [
+	    {
+	      "matches": ["http://weibo.com/*"],
+	      "js": ["jquery-1.10.2.min.js", "script.js"]
+	    }
+  	],
+
 	"browser_action": {
 		"default_icon":"zoom.png",
 		"default_popup":"index.html"
 	}
+
 }
