@@ -7,7 +7,7 @@
 
 	"content_scripts": [
 	    {
-	      "matches": ["http://weibo.com/*"],
+	      "matches": ["*://*/*"],
 	      "js": ["jquery-1.10.2.min.js", "script.js"]
 	    }
   	],
